@@ -2,13 +2,14 @@
     font-size: 11px; 
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 0;
     transform: translate(-50%, -50%);
 }
    
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: darkred; 
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -31,37 +32,29 @@ body {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
-.image-section img {
-    width: 100%;
-}
-
 .main-image {
-    position: relative;
-    right: 20%;
+    position: absolute;
+    right: 8%;
     top: 12%;
-    z-index: 3;
-
 }
 
 .box {
-    position: absolute;
+    position: fixed;
     top: 38%;
-    left: -10%;
-    z-index: 5;
-    filter: drop-shadow( -5px 7px 5px rgba(0,0,0,.175));   
+    right: 90%;
+    filter: drop-shadow( -5px 7px 5px rgba(0,0,0,.175)); 
 }
 
 .bg-img {
-    position: relative;
-    right: 36rem;
-    bottom: 41rem;
-    z-index: 2;
-
+    position: absolute;
+    right: 10%;
+    bottom: -28%;
 }
 
 .image-section {
     width: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 .accordion {
